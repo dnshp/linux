@@ -167,3 +167,16 @@
 		"[NC]",
 		"[NC]";
 };
+
+&i2c2 {
+	magn@1e {
+		status = "okay";
+		compatible = "st,lsm9ds1-magn";
+		reg = <0x1e>;
+	};
+	imu@6b {
+		status = "okay";
+		compatible = "st,lsm9ds1-imu";
+		reg = <0x6b>;
+	};
+};
